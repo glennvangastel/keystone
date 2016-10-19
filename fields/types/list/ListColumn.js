@@ -11,7 +11,7 @@ export default class ListColumn extends React.Component {
 	}
 
 	getValue () {
-		let value = this.props.data.fields[this.props.col.path];
+		const value = this.props.data.fields[this.props.col.path];
 		return Array.isArray(value) ? plural(value.length, '* Value', '* Values') : ''
 	}
 
